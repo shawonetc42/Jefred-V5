@@ -1,0 +1,71 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\shawon\.npm-global\node_modules\yarn\bin\yarn.js dev
+
+PATH: 
+  C:\Program Files\Zulu\zulu-17\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\wamp64\bin\php\php7.4.33;C:\composer;C:\Program Files (x86)\Java\jdk1.8.0_202\bin;C:\Program Files\Git\cmd;C:\Users\shawon\AppData\Local\Android\Sdk\tools;C:\Users\shawon\AppData\Local\Android\Sdk;C:\Users\shawon\AppData\Local\Android\Sdk\platform-tools;C:\Users\shawon\AppData\Local\Android\Sdk\platforms;C:\Users\shawon\AppData\Local\Android\Sdk\build-tools;C:\Users\shawon\AppData\Local\Android\Sdk\cmdline-tools;C:\Users\shawon\AppData\Local\Android\Sdk\cmdline-tools\latest\bin;C:\Users\shawon\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Users\shawon\AppData\Local\Android\android-studio\platform-tools;C:\Users\shawon\AppData\Local\Android\android-studio\tools;C:\Users\shawon\.console-ninja\.bin;C:\src\flutter\bin;D:\Apps Install\Microsoft VS Code\bin;C:\Users\shawon\AppData\Local\Microsoft\WindowsApps;C:\Users\shawon\.dotnet\tools;C:\Users\shawon\AppData\Roaming\npm;C:\Users\shawon\.npm-global;C:\Users\shawon\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Java\jre-1.8\bin;C:\Program Files (x86)\Java\jdk1.8.0_202\bin;C:\Python311\Scripts;C:\Program Files\Java\jdk-20\bin;C:\Users\shawon\AppData\Local\Programs\Microsoft VS Code\bin;C:\android\sdk\flutter\flutter\bin;C:\Users\shawon\AppData\Local\Programs\mongosh\;C:\Users\shawon\AppData\Local\Android\Sdk\platform-tools;C:\Users\shawon\AppData\Local\Android\Sdk\build-tools;C:\Users\shawon\AppData\Local\Android\Sdk\platforms;C:\Users\shawon\AppData\Local\Android\Sdk\cmdline-tools;C:\Users\shawon\AppData\Local\Android\android-studio\cmdline-tools;C:\Users\shawon\AppData\Local\Android\Sdk\tools;C:\Users\shawon\AppData\Local\Android\Sdk\cmdline-tools;C:\Users\shawon\AppData\Local\Android\Sdk\cmdline-tools\latest\bin;C:\Users\shawon\AppData\Local\Android\Sdk\platform-tools;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.5.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  TypeError [ERR_INVALID_ARG_VALUE]: The property 'options.env['npm_package_description']' must be a string without null bytes. Received '\x00#\x00 \x00s\x00h\x00a\x00w\x00o\x00n\x00\r\x00 \x00#\x00 \x00s\x00h\x00a\x00w\x00o\x00n\x00\r\x00 \x00#\x00 \x00s\x00h\x00a...
+      at new NodeError (node:internal/errors:405:5)
+      at validateArgumentNullCheck (node:child_process:970:11)
+      at normalizeSpawnArguments (node:child_process:699:7)
+      at Object.spawn (node:child_process:752:13)
+      at C:\Users\shawon\.npm-global\node_modules\yarn\lib\cli.js:25732:24
+      at new Promise (<anonymous>)
+      at new F (C:\Users\shawon\.npm-global\node_modules\yarn\lib\cli.js:5305:28)
+      at C:\Users\shawon\.npm-global\node_modules\yarn\lib\cli.js:25729:12
+      at run (C:\Users\shawon\.npm-global\node_modules\yarn\lib\cli.js:43184:7)
+      at BlockingQueue.maybePushConcurrencyQueue (C:\Users\shawon\.npm-global\node_modules\yarn\lib\cli.js:43199:7)
+
+npm manifest: 
+  {
+    "name": "nextjs-loading-example",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "@next-auth/mongodb-adapter": "^1.1.3",
+      "@react-pdf-viewer/core": "^3.12.0",
+      "@react-pdf-viewer/default-layout": "^3.12.0",
+      "axios": "^1.7.2",
+      "mongoose": "^8.4.3",
+      "next": "14.2.3",
+      "next-auth": "^4.24.7",
+      "react": "^18",
+      "react-dom": "^18",
+      "react-google-login": "^5.2.2",
+      "react-icons": "^5.2.1",
+      "react-infinite-scroll-component": "^6.1.0",
+      "react-pdf": "^9.1.0",
+      "react-quill": "^2.0.0",
+      "react-toastify": "^10.0.5",
+      "socket.io-client": "^4.7.5",
+      "swiper": "^11.1.7"
+    },
+    "devDependencies": {
+      "eslint": "^8",
+      "eslint-config-next": "14.2.3",
+      "postcss": "^8",
+      "tailwindcss": "^3.4.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

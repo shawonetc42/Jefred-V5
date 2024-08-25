@@ -1,0 +1,9 @@
+# robots.txt for jefred.vercel.app
+
+User-agent: *
+Disallow: /_next/   # Disallow crawling of Next.js build files
+Disallow: /api/     # Disallow crawling of API routes
+Disallow: /admin/   # Disallow crawling of admin routes
+Disallow: /private/ # Disallow crawling of private pages
+
+Sitemap: https://jefred.com/sitemap.xml

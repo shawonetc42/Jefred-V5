@@ -1,0 +1,50 @@
+{
+  "stories": [
+    {
+      "title": "New story",
+      "created": 1717675400398,
+      "submissionHistory": {},
+      "versions": [
+        "54bd8618-b32d-47d6-b40f-ba2a5f2f46e7"
+      ],
+      "id": "2653414a-e08c-40c7-b7fe-28bc0e0d81a0"
+    }
+  ],
+  "versions": [
+    {
+      "storyId": "2653414a-e08c-40c7-b7fe-28bc0e0d81a0",
+      "name": "draft",
+      "wordCount": 0,
+      "created": 1717675400399,
+      "statistics": {},
+      "id": "54bd8618-b32d-47d6-b40f-ba2a5f2f46e7"
+    }
+  ],
+  "backups": [
+    {
+      "timestamp": 1717686163509,
+      "localPath": "C:\\Users\\shawon\\Documents\\BabelWorkspaceBackups\\babel-2024-06-06.backup.zip",
+      "cloudProviders": [],
+      "id": "37896898-36c8-4f90-b360-37547ae77696"
+    },
+    {
+      "timestamp": 1718356528374,
+      "localPath": "C:\\Users\\shawon\\Documents\\BabelWorkspaceBackups\\babel-2024-06-14.backup.zip",
+      "cloudProviders": [],
+      "id": "a515c554-181c-47e2-b1f7-46921487b677"
+    },
+    {
+      "timestamp": 1723798697094,
+      "localPath": "C:\\Users\\shawon\\Documents\\BabelWorkspaceBackups\\babel-2024-08-16.backup.zip",
+      "cloudProviders": [],
+      "id": "5b73d4ad-a7f2-475d-8211-223b8c3e8967"
+    },
+    {
+      "timestamp": 1724476556631,
+      "localPath": "C:\\Users\\shawon\\Documents\\BabelWorkspaceBackups\\babel-2024-08-24.backup.zip",
+      "cloudProviders": [],
+      "id": "08712ff1-2705-458a-bd88-b99b2743c26e"
+    }
+  ],
+  "activity": []
+}
