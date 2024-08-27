@@ -8,7 +8,7 @@ export default function ProfilePage() {
 
   const handleLogout = async () => {
     try {
-      const res = await fetch("http://localhost:5000/auth/logout", {
+      const res = await fetch("https://flashmain.vercel.app/auth/logout", {
         method: "POST",
         credentials: "include", // Include cookies in request
       });
@@ -30,7 +30,7 @@ export default function ProfilePage() {
     // Fetch user profile information
     const fetchProfile = async () => {
       try {
-        const res = await fetch("http://localhost:5000/auth/profile", {
+        const res = await fetch("https://flashmain.vercel.app/auth/profile", {
           method: "GET",
           credentials: "include", // Include cookies in request
         });
@@ -57,6 +57,7 @@ export default function ProfilePage() {
     <div className="mt-20">
       <h1>Profile</h1>
       <p>Email: {userData.email}</p>
+      <p>Name: {userData.name}</p>
       <p>
         Account Created At: {new Date(userData.created_at).toLocaleString()}
       </p>
