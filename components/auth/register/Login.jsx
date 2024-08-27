@@ -12,7 +12,7 @@ export default function LoginForm() {
     setMessage(""); // Reset message before request
 
     try {
-      const res = await fetch("http://localhost:5000/auth/login", {
+      const res = await fetch("https://flashmain.vercel.app/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -35,40 +35,55 @@ export default function LoginForm() {
   };
 
   return (
-    <div className=" flex justify-center items-center">
-      <form
-        onSubmit={handleLogin}
-        className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md"
-      >
-        <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
-        <div className="mb-4">
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email"
-            required
-            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
-        <div className="mb-6">
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Password"
-            required
-            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
-        <button
-          type="submit"
-          className="w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition-colors"
-        >
+    <div className="flex justify-center items-center h-screen bg-gray-100">
+      <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md mx-4">
+        <h2 className="text-3xl font-semibold mb-6 text-center text-gray-800">
           Login
-        </button>
-      </form>
-      {message && <p className="text-red-500 mt-4 text-center">{message}</p>}
+        </h2>
+        <form onSubmit={handleLogin}>
+          <div className="mb-6">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-600 mb-1"
+            >
+              Email
+            </label>
+            <input
+              id="email"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter your email"
+              required
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+            />
+          </div>
+          <div className="mb-6">
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-gray-600 mb-1"
+            >
+              Password
+            </label>
+            <input
+              id="password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Enter your password"
+              required
+              className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+            />
+          </div>
+          <button
+            type="submit"
+            className="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-150 ease-in-out"
+          >
+            Login
+          </button>
+        </form>
+        {message && <p className="text-red-500 mt-4 text-center">{message}</p>}
+      </div>
     </div>
   );
 }
